@@ -14,7 +14,7 @@ class GamesContainer extends React.Component {
     return (
       <div>
         <GameInput />
-        <GamesList games={this.props.accounts} />
+        <GamesList games={this.props.games} />
       </div>
     )
   }
