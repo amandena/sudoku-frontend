@@ -5,16 +5,22 @@ import Grid from '../components/Grid'
 import {fetchGames} from '../actions/fetchGames'
 
 class GamesContainer extends React.Component {
+  state = {
+    height: 9,
+    width: 9
+  }
 
   componentDidMount() {
     this.props.fetchGames()
   }
 
   render() {
+    const { height, width } = this.state
+
     return (
       <div>
         <Box />
-        <Grid games={this.props.games} />
+        <Grid height={height} width={width} />
       </div>
     )
   }
