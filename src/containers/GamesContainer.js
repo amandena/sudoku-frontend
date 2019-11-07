@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import GameInput from '../components/GameInput'
-import GamesList from '../components/GamesList'
+import Box from '../components/Box'
+import Grid from '../components/Grid'
 import {fetchGames} from '../actions/fetchGames'
 
 class GamesContainer extends React.Component {
@@ -13,8 +13,8 @@ class GamesContainer extends React.Component {
   render() {
     return (
       <div>
-        <GameInput />
-        <GamesList games={this.props.games} />
+        <Box />
+        <Grid games={this.props.games} />
       </div>
     )
   }

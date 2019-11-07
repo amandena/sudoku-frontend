@@ -1,6 +1,6 @@
 import React from 'react'
 
-const GamesList = props => {
+const Grid = props => {
 
   return (
     <div>
@@ -9,4 +9,4 @@ const GamesList = props => {
   )
 }
 
-export default GamesList
+export default Grid

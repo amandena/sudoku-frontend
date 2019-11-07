@@ -1,14 +1,16 @@
 import React from 'react'
 
-class GameInput extends React.Component {
+class Box extends React.Component {
 
   render() {
     return (
       <div>
-        GameInput
+        <form>
+
+        </form>
       </div>
     )
   }
 }
 
-export default GameInput
+export default Box
