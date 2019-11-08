@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import Box from '../components/Box'
-import Grid from '../components/Grid'
+import Board from '../components/Board'
 import {fetchGames} from '../actions/fetchGames'
 
 class GamesContainer extends React.Component {
@@ -20,7 +20,7 @@ class GamesContainer extends React.Component {
     return (
       <div>
         <Box />
-        <Grid height={height} width={width} />
+        <Board height={height} width={width} />
       </div>
     )
   }

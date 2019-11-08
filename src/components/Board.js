@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Grid = props => {
+const Board = props => {
 
   return (
     <div>
-      
+
     </div>
   )
 }
 
-export default Grid
+export default Board
