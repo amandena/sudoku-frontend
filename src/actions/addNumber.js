@@ -9,5 +9,7 @@ export const addNumber = data => {
       method: 'POST',
       body: JSON.stringify(data)
     })
+      .then(res => res.json())
+      .then(game => dispatch({type: 'ADD_NUMBER', payload: game}))
   }
 }
