@@ -1,4 +1,6 @@
 import React from 'react'
+import {connect} from 'react-redux'
+import {addNumber} from '../actions/addNumber'
 
 class Box extends React.Component {
   state = {
@@ -22,10 +24,15 @@ class Box extends React.Component {
     })
   }
 
+  handleSubmit = event => {
+    event.preventDefault()
+    this.props.addNumber(this.state)
+  }
+
   render() {
     return (
       <div>
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <input type="text" value={this.state.name} name="number" onChange={this.handleChange} />
         </form>
       </div>
@@ -33,4 +40,4 @@ class Box extends React.Component {
   }
 }
 
-export default Box
+export default connect(null, {addNumber})(Box)
