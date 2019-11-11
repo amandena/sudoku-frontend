@@ -6,8 +6,7 @@ import {fetchGames} from '../actions/fetchGames'
 
 class GamesContainer extends React.Component {
   state = {
-    height: 9,
-    width: 9
+    games: ''
   }
 
   componentDidMount() {
@@ -15,12 +14,11 @@ class GamesContainer extends React.Component {
   }
 
   render() {
-    const { height, width } = this.state
 
     return (
       <div>
         <Box />
-        <Board height={height} width={width} />
+        <Board games={this.props.games} />
       </div>
     )
   }
