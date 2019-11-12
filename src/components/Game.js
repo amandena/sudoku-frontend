@@ -7,7 +7,7 @@ const Game = props => {
 
   return (
     <div>
-    {game ? null : <Redirect to='/games' />}
+    {game ? null : <Redirect to='/games' />} {/*not working properly*/}
     {game ? game.numbers : null}
     {game ? game.difficulty : null}
     {game ? game.won : null}
