@@ -2,11 +2,13 @@ import React from 'react'
 
 const Game = props => {
 
+  let game = props.games[props.match.params.id - 1]
+  
   return (
     <div>
-      {props.game.numbers}
-      {props.game.difficulty}
-      {props.game.won}
+    {game ? game.numbers : null}
+    {game ? game.difficulty : null}
+    {game ? game.won : null}
     </div>
   )
 }
