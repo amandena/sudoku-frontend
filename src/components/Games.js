@@ -1,7 +1,7 @@
 import React from 'react'
 import Game from './Game'
 
-const Board = props => {
+const Games = props => {
 
   return (
     <div>
@@ -10,4 +10,4 @@ const Board = props => {
   )
 }
 
-export default Board
+export default Games

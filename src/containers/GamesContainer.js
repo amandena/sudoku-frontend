@@ -1,7 +1,8 @@
 import React from 'react'
 import {connect} from 'react-redux'
+import {Route} from 'react-router-dom'
 import Box from '../components/Box'
-import Board from '../components/Board'
+import Games from '../components/Games'
 import {fetchGames} from '../actions/fetchGames'
 
 class GamesContainer extends React.Component {
@@ -18,7 +19,7 @@ class GamesContainer extends React.Component {
     return (
       <div>
         <Box />
-        <Board games={this.props.games} />
+        <Route path='/games' render={() => <Games games={this.props.games} />} />
       </div>
     )
   }
