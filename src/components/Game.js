@@ -1,5 +1,5 @@
 import React from 'react'
-import {Redirect} from 'react-router-dom'
+// import {Redirect} from 'react-router-dom'
 
 const Game = props => {
 
@@ -7,10 +7,10 @@ const Game = props => {
 
   return (
     <div>
-    {/*game ? null : <Redirect to='/games' />} {/*not working properly*/}
-    {game ? game.numbers : null}
-    {game ? game.difficulty : null}
-    {game ? game.won : null}
+      {/*game ? null : <Redirect to='/games' />} {/*not working properly*/}
+      {game ? game.numbers : null}
+      {game ? game.difficulty : null}
+      {game ? game.won : null}
     </div>
   )
 }
