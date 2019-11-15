@@ -1,0 +1,10 @@
+.row {
+  display: inline-block;
+  flex-flow: row;
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-flow: row;
+}

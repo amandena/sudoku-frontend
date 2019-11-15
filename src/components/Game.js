@@ -1,5 +1,5 @@
 import React from 'react'
-import Box from './Box'
+import Row from './Row'
 // import {Redirect} from 'react-router-dom'
 
 const Game = props => {
@@ -12,7 +12,7 @@ const Game = props => {
       {game ? game.numbers : null}
       {game ? game.difficulty : null}
       {game ? game.won : null}
-      <Box />
+      <Row />
     </div>
   )
 }
