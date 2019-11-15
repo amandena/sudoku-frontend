@@ -1,6 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {addNumber} from '../actions/addNumber'
+import '../css/Box.css'
 
 class Box extends React.Component {
   state = {
@@ -33,7 +34,7 @@ class Box extends React.Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <input type="text" value={this.state.name} name="number" onChange={this.handleChange} />
+          <input className="box" type="text" value={this.state.name} name="number" onChange={this.handleChange} />
         </form>
       </div>
     )
