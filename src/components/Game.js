@@ -7,10 +7,17 @@ const Game = props => {
 
   let game = props.games[props.match.params.id - 1]
 
+  let splitNumbers = () => {
+    if (game && game.numbers) {
+      return game.numbers.split("")
+    }
+  }
+
+
   return (
     <div>
       {/*game ? null : <Redirect to='/games' />} {/*not working properly*/}
-      {game ? game.numbers : null}
+      {splitNumbers()}
       {game ? game.difficulty : null}
       {game ? game.won : null}
       <div className="board">
